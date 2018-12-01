@@ -1,0 +1,170 @@
+body {
+  background-color: #292c2d;
+  color: #f9f9f9;
+  font-size: 18px;
+
+  @media (max-width: 850px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
+}
+
+// Navbar
+#navbar {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background-color: #3a3e3f;
+  border-right: 5px solid #595f60;
+
+  header {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.95em;
+    color: #98ba8b;
+    margin-left: 30px;
+  }
+
+  hr {
+    line-height: 0;
+    border-top: 1px inset #595f60;
+    border-bottom: 1px inset #595f60;
+  }
+
+  @media (max-width: 850px) {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    border-right: none;
+    border-bottom: 5px solid #595f60;
+  }
+}
+
+main {
+  margin-left: 355px;
+  @media (max-width: 850px) {
+    margin-left: 0px;
+    margin-top: 215px;
+  }
+}
+// Main sections <section>
+.main-section {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+
+  //Offset navbar
+  @media (max-width: 850px) {
+    padding-top: 210px;
+    margin-top: -210px;
+  }
+
+  // Title
+  header {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+    margin-bottom: 20px;
+    color: #98ba8b;
+  }
+
+  p {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: 15px;
+  }
+
+  ul {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: 30px;
+  }
+  //Code snippets
+  code {
+    display: block;
+
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.9em;
+    color: #ddc982;
+
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    white-space: pre;
+
+    background-color: #636363;
+    padding: 10px 0 10px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 5px;
+
+    @media (max-width: 480px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 320px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  // Mozilla MDN link
+  a {
+    text-decoration: none;
+    color: #897586;
+    font-weight: 700;
+  }
+}
+
+// Scrollbar background
+::-webkit-scrollbar {
+  background: #171919;
+  //border-left: 1px solid #262828;
+  //border-right: 1px solid #262828;
+  width: 0.75em;
+}
+
+//Scrollbar track
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(70, 70, 70, 0.4);
+}
+/*
+  ::-webkit-scrollbar-track-piece {
+    background: #171919;
+    border-left: 1px solid #262828;
+    border-right: 1px solid #262828;
+    width: .75em;
+  }*/
+
+//Scrollbar slider
+::-webkit-scrollbar-thumb {
+  background: #8e9696;
+  border-radius: 8px;
+  border: 2px outset #7b8282;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4f4f;
+}
